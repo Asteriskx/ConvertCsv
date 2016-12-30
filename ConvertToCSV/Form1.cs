@@ -25,7 +25,7 @@ namespace ConvertToCSV
         {
             DialogResult result = MessageBox.Show( "ファイルを作成しますか？",
                                                    "ファイル作成！",
-                                                   MessageBoxButtons.YesNoCancel,
+                                                   MessageBoxButtons.YesNo,
                                                    MessageBoxIcon.Exclamation,
                                                    MessageBoxDefaultButton.Button2
                                                   );
@@ -36,10 +36,23 @@ namespace ConvertToCSV
                 // 「はい」が押下された場合
                 case DialogResult.Yes:
                     executeCsv(); // CSV 書き込みメソッドコール
+
+                    MessageBox.Show( "ファイル作成が完了しました。",
+                                     "ファイル作成完了！",
+                                     MessageBoxButtons.OK,
+                                     MessageBoxIcon.Asterisk,
+                                     MessageBoxDefaultButton.Button1
+                                    );
                     break;
                 
                 // 「いいえ」が押下された場合
                 case DialogResult.No:
+                    MessageBox.Show( "ファイル作成されませんでした。",
+                                     "ファイル作成中断！",
+                                     MessageBoxButtons.OK,
+                                     MessageBoxIcon.Asterisk,
+                                     MessageBoxDefaultButton.Button1
+                                    );
                     break;
 
                 // 上記以外の場合
