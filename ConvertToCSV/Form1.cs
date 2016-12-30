@@ -16,6 +16,11 @@ namespace ConvertToCSV
             return;
         }
 
+        /// <summary>
+        /// Convert ボタン押下時の処理メソッド
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ConvertButton_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show( "ファイルを作成しますか？",
@@ -25,15 +30,19 @@ namespace ConvertToCSV
                                                    MessageBoxDefaultButton.Button2
                                                   );
 
+            // ダイアログの結果を受けて処理
             switch ( result )
             {
+                // 「はい」が押下された場合
                 case DialogResult.Yes:
                     executeCsv(); // CSV 書き込みメソッドコール
                     break;
-
+                
+                // 「いいえ」が押下された場合
                 case DialogResult.No:
                     break;
 
+                // 上記以外の場合
                 default:
                     break;
 
