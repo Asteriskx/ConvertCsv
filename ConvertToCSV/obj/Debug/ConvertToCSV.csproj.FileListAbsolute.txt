@@ -1,9 +1,9 @@
 c:\users\asterisk\documents\visual studio 2015\Projects\ConvertToCSV\ConvertToCSV\bin\Debug\ConvertToCSV.exe.config
 C:\Users\Asterisk\documents\visual studio 2015\Projects\ConvertToCSV\ConvertToCSV\bin\Debug\ConvertToCSV.exe
 C:\Users\Asterisk\documents\visual studio 2015\Projects\ConvertToCSV\ConvertToCSV\bin\Debug\ConvertToCSV.pdb
-C:\Users\Asterisk\documents\visual studio 2015\Projects\ConvertToCSV\ConvertToCSV\obj\Debug\ConvertToCSV.csprojResolveAssemblyReference.cache
 C:\Users\Asterisk\documents\visual studio 2015\Projects\ConvertToCSV\ConvertToCSV\obj\Debug\ConvertToCSV.Form1.resources
 C:\Users\Asterisk\documents\visual studio 2015\Projects\ConvertToCSV\ConvertToCSV\obj\Debug\ConvertToCSV.Properties.Resources.resources
 C:\Users\Asterisk\documents\visual studio 2015\Projects\ConvertToCSV\ConvertToCSV\obj\Debug\ConvertToCSV.csproj.GenerateResource.Cache
 C:\Users\Asterisk\documents\visual studio 2015\Projects\ConvertToCSV\ConvertToCSV\obj\Debug\ConvertToCSV.exe
 C:\Users\Asterisk\documents\visual studio 2015\Projects\ConvertToCSV\ConvertToCSV\obj\Debug\ConvertToCSV.pdb
+C:\Users\Asterisk\documents\visual studio 2015\Projects\ConvertToCSV\ConvertToCSV\obj\Debug\ConvertToCSV.SplashControl.resources
