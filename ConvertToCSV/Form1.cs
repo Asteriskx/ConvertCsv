@@ -4,13 +4,24 @@ using System.Windows.Forms;
 
 namespace ConvertToCSV
 {
+    /// <summary>
+    /// ConvertCsv メインクラス
+    /// </summary>
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Form がロードされた時の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
             return;
@@ -23,6 +34,10 @@ namespace ConvertToCSV
         /// <param name="e"></param>
         private void ConvertButton_Click(object sender, EventArgs e)
         {
+            // StatusStrip のStatusStripLabel を下記メッセージに更新
+            BarStatus.Text = "ファイル作成画面の指示に従ってください。";
+
+            // ファイル作成可否の確認メッセージを表示
             DialogResult result = MessageBox.Show( "ファイルを作成しますか？",
                                                    "ファイル作成！",
                                                    MessageBoxButtons.YesNo,
@@ -35,8 +50,14 @@ namespace ConvertToCSV
             {
                 // 「はい」が押下された場合
                 case DialogResult.Yes:
-                    executeCsv(); // CSV 書き込みメソッドコール
 
+                    // CSV 書き込みメソッドコール
+                    executeCsv();
+
+                    // StatusStrip のStatusStripLabel を下記メッセージに更新
+                    BarStatus.Text = "ファイル作成中...";
+
+                    // ファイル作成完了メッセージ表示
                     MessageBox.Show( "ファイル作成が完了しました。",
                                      "ファイル作成完了！",
                                      MessageBoxButtons.OK,
@@ -47,6 +68,10 @@ namespace ConvertToCSV
                 
                 // 「いいえ」が押下された場合
                 case DialogResult.No:
+                    // StatusStrip のStatusStripLabel を下記メッセージに更新
+                    BarStatus.Text = "ファイル未作成！";
+
+                    //ファイル未作成メッセージ表示
                     MessageBox.Show( "ファイル作成されませんでした。",
                                      "ファイル作成中断！",
                                      MessageBoxButtons.OK,
@@ -57,9 +82,14 @@ namespace ConvertToCSV
 
                 // 上記以外の場合
                 default:
+                    // StatusStrip のStatusStripLabel を下記メッセージに更新
+                    BarStatus.Text ="準備完了";
                     break;
 
             }
+
+            // StatusStrip のStatusStripLabel を下記メッセージに更新
+            BarStatus.Text = "準備完了";
 
             return;
         }
