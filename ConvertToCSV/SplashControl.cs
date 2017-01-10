@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ConvertToCSV
@@ -22,11 +22,11 @@ namespace ConvertToCSV
             // 
             // SplashControl
             // 
-            this.BackgroundImage = global::ConvertToCSV.Properties.Resources.icon_256;
-            this.ClientSize = new System.Drawing.Size(256, 241);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.BackgroundImage = Properties.Resources.icon_256;
+            this.ClientSize = new　Size(256, 241);
+            this.FormBorderStyle = FormBorderStyle.None;
             this.Name = "SplashControl";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
 
         }
