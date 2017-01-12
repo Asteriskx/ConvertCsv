@@ -93,7 +93,7 @@ namespace ConvertToCSV
         /// ストリームの現在位置から末尾までのストリームの残り部分。
         /// 現在の位置がストリームの末尾である場合は、空の配列が返されます。
         /// </returns>
-        public Task<List<List<string>>> ReadToEndAsync()
+        public async Task<List<List<string>>> ReadToEndAsync()
         {
             return await Task.Run(() =>
             {
