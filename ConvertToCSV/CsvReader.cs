@@ -95,7 +95,7 @@ namespace ConvertToCSV
         /// </returns>
         public Task<List<List<string>>> ReadToEndAsync()
         {
-            return Task.Factory.StartNew(() =>
+            return await Task.Run(() =>
             {
                 return this.ReadToEnd();
             });
